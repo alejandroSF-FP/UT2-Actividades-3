@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>EJERCICIO 3 - LÁZARO PIÑERO</h1>
-    <img src="https://www.readersdigest.ca/wp-content/uploads/2018/07/most-beautiful-trees-dragon-blood-trees.jpg" alt="">
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio2 </title>
+        <style>
+            h1 {
+                color: rgb(77, 223, 109);
+                font-size: 35px;
+            }
+
+            .imagen {
+                border: 5px inset rgb(77, 223, 109);
+                border-radius: 5px;
+                border-style: outset;
+                width: 600px;
+            }
+
+            body {
+                font-family: 'Mulish', sans-serif;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .formulario {
+                flex: 1;
+                padding: 14px 14px;
+                border: 5px inset rgb(77, 223, 109);
+                display: flex;
+                flex-flow: row wrap;
+                flex-direction: column;
+                align-self: center;
+                width: 571px;
+            }
+
+            .formulario label {
+                margin: 5px 10px 5px 0;
+            }
+
+            .formulario input {
+                vertical-align: middle;
+                margin: 5px 10px 5px 0;
+                padding: 10px;
+            }
+
+            .formulario button {
+                margin-top: 10px;
+                padding: 10px 20px;
+                height: 50px;
+                align-self: center;
+                border-radius: 10px;
+                background-color: rgb(77, 223, 109);
+                border: solid 1px black;
+                text-align: center;
+            }
+
+            @media screen and (max-width : 480px) {
+
+                h1 {
+                    color: rgb(73, 169, 223);
+                    font-size: 15px;
+                }
+
+                .imagen {
+                    border: 5px inset rgb(73, 169, 223);
+                    border-radius: 5px;
+                    border-style: outset;
+                    width: 430px;
+                }
+
+                .formulario {
+                    border: 5px inset rgb(73, 169, 223);
+                    width: 400px;
+                }
+
+                .formulario button {
+                    background-color: rgb(73, 169, 223);
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titulo">
+            <h1>LazaroPiñero-Ej2-Actividades1-UT3b</h1>
+        </div>
+        <div class="bloque-imagen">
+            <img class="imagen" src="https://www.readersdigest.ca/wp-content/uploads/2018/07/most-beautiful-trees-dragon-blood-trees.jpg" alt="">
+        </div>
+        <div class="form">
+            <form class="formulario">
+                <div class="form-row">
+                    <textarea class="cuadro-texto" rows="5" cols="47" placeholder="Deja un comentario"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required autofocus>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
 </html>
